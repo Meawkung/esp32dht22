@@ -1,0 +1,22 @@
+menu "Configuration wifi"
+config WIFI_SSID
+    string "WiFi SSID"
+    default "your_wifi_ssid"
+    help
+      Enter the SSID of your WiFi network.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default "your_wifi_password"
+    help
+      Enter the password for your WiFi network.
+endmenu
+
+menu "Configuration GPIO"
+config DHT22_GPIO
+    int "GPIO for DHT22"
+    default 27
+    help
+      Enter the GPIO number for DHT22 sensor.
+
+endmenu
