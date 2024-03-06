@@ -1,0 +1,6 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "DHT22.C": "cpp"
+    }
+}

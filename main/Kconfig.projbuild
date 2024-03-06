@@ -20,3 +20,26 @@ config DHT22_GPIO
       Enter the GPIO number for DHT22 sensor.
 
 endmenu
+
+menu "Configuration MQTT"
+
+  config BROKER_CERTIFICATE_OVERRIDE
+    string "Broker certificate override"
+    default ""
+    help
+        Please leave empty if broker certificate included from a textfile; otherwise fill in a base64 part of PEM
+        format certificate
+
+  config MQTT_USERNAME
+    string "MQTT username"
+    default ""
+    help
+      Enter the username for your MQTT broker.
+
+  config MQTT_PASSWORD
+    string "MQTT password"
+    default ""
+    help
+      Enter the password for your MQTT broker.
+endmenu
+
